@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍳 Recipe Finder</h1>
+
+    <div class="search-bar">
+      <input id="ingredient" type="text" placeholder="Enter ingredient (e.g., chicken)" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div class="filters">
+      <label>⏱ Time:
+        <select id="timeSelect">
+          <option value="any">Any</option>
+          <option value="15">≤ 15 min</option>
+          <option value="30">≤ 30 min</option>
+        </select>
+      </label>
+
+      <div class="moods">
+        <label><input type="checkbox" class="mood-cb" value="comfort" /> Comfort</label>
+        <label><input type="checkbox" class="mood-cb" value="light" /> Light</label>
+        <label><input type="checkbox" class="mood-cb" value="spicy" /> Spicy</label>
+      </div>
+    </div>
+
+    <div id="results"></div>
+    <div id="detail" hidden></div>
+  </div>
+
+  <!-- ✅ Place script at bottom so DOM is ready -->
+  <script src="script.js"></script>
+</body>
+</html>
